@@ -17,7 +17,7 @@ function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="#hero" className="text-xl font-bold tracking-tight text-blue-400 hover:text-blue-300">
-              DataIngeniør<span className="text-slate-400">.no</span>
+              ToftPortfolio<span className="text-slate-400">.no</span>
             </a>
           </div>
 

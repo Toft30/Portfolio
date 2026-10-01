@@ -1,40 +1,23 @@
 const projectsData = [
   {
     id: 1,
-    title: 'Realtids Datastraum med Apache Kafka & Spark',
+    title: 'AI agent Manager',
     description:
-      'Ein end-to-end pipeline som prosesserer strømmande finansiell data i realtid, lagrar aggregat i PostgreSQL og visualiserer nøkkeltal i eit dashboard.',
-    techStack: ['Python', 'Apache Kafka', 'PySpark', 'PostgreSQL', 'Docker'],
-    githubUrl: 'https://github.com',
-    demoUrl: 'https://example.com',
+      'Ein smart AI assistent som kan deligere små oppgåver til andre AI agentar.',
+    techStack: ['Java', 'Spring', 'LangChain', 'PostgreSQL'],
+    githubUrl: 'https://github.com/Toft30/AI-manager.git',
+    demoUrl: '',
   },
   {
     id: 2,
-    title: 'Automatisert ETL Pipeline & dbt Datamodellering',
+    title: 'Framtdig plan',
     description:
-      'Løsning for orkestrering av daglege datainnladingar med Apache Airflow, transformering gjennom dbt og lagring i Snowflake for analytiske spørjingar.',
-    techStack: ['Python', 'Apache Airflow', 'dbt', 'Snowflake', 'SQL'],
-    githubUrl: 'https://github.com',
-    demoUrl: 'https://example.com',
+      'Idk ka ej ska lage her helt enda',
+    techStack: ['Må sjå kva eg vil kode'],
+    githubUrl: '',
+    demoUrl: '',
   },
-  {
-    id: 3,
-    title: 'Data Platform Infrastructure as Code',
-    description:
-      'Provisjonering av skyinfrastruktur på AWS med Terraform for oppsett av S3 datainnsjø, EKS cluster og IAM rettigheiter.',
-    techStack: ['Terraform', 'AWS', 'Kubernetes', 'Docker', 'Bash'],
-    githubUrl: 'https://github.com',
-    demoUrl: 'https://example.com',
-  },
-  {
-    id: 4,
-    title: 'Interaktiv Data-Dashboard i React & Vite',
-    description:
-      'Ein responsiv og moderne webapplikasjon bygd for visning av API-metrikkar, ytelsesdata og pipeline-statusar.',
-    techStack: ['React', 'Vite', 'Tailwind CSS', 'JavaScript', 'REST API'],
-    githubUrl: 'https://github.com',
-    demoUrl: 'https://example.com',
-  },
+
 ]
 
 function Projects() {
