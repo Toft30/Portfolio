@@ -1,18 +1,22 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 import Projects from './components/Project'
+import Skills from './components/Skills'
+import Contact from './components/Contact'
 
-
-function App(){
-  return(
-    <div className="bg-slate-800 text-white p-6 rounded-xl border border-slate-700 hover:border-slate-500 transition">
-        <header>
-          <h1>Simon Sverre Toft</h1>
-          <p>Velkommen til min portfolio</p>
-        </header>
+function App() {
+  return (
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-blue-500 selection:text-white">
+      <Navbar />
+      <main className="space-y-8 pb-16">
+        <Hero />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <footer className="border-t border-slate-800/80 py-8 text-center text-sm text-slate-500 bg-slate-900/50">
+        <p>© {new Date().getFullYear()} Simon Sverre Toft — Dataingeniør Portefølje. Bygd med React, Vite & Tailwind CSS.</p>
+      </footer>
     </div>
   )
 }
