@@ -16,7 +16,7 @@ function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="#hero" className="text-xl font-bold tracking-tight text-blue-400 hover:text-blue-300">
+            <a href="#hero" className="text-xl font-bold tracking-tight text-emerald-400 hover:text-emerald-300">
               DataIngeniør<span className="text-slate-400">.no</span>
             </a>
           </div>
@@ -26,25 +26,25 @@ function Navbar() {
             <div className="ml-10 flex items-baseline space-x-6">
               <a
                 href="#about"
-                className="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Om meg
               </a>
               <a
                 href="#projects"
-                className="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Prosjekt
               </a>
               <a
                 href="#skills"
-                className="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Ferdigheiter
               </a>
               <a
                 href="#contact"
-                className="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                className="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
               >
                 Kontakt
               </a>
@@ -81,28 +81,28 @@ function Navbar() {
           <a
             href="#about"
             onClick={closeMenu}
-            className="block hover:bg-slate-800 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            className="block hover:bg-slate-800 hover:text-emerald-400 px-3 py-2 rounded-md text-base font-medium"
           >
             Om meg
           </a>
           <a
             href="#projects"
             onClick={closeMenu}
-            className="block hover:bg-slate-800 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            className="block hover:bg-slate-800 hover:text-emerald-400 px-3 py-2 rounded-md text-base font-medium"
           >
             Prosjekt
           </a>
           <a
             href="#skills"
             onClick={closeMenu}
-            className="block hover:bg-slate-800 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            className="block hover:bg-slate-800 hover:text-emerald-400 px-3 py-2 rounded-md text-base font-medium"
           >
             Ferdigheiter
           </a>
           <a
             href="#contact"
             onClick={closeMenu}
-            className="block bg-blue-600 hover:bg-blue-500 text-white px-3 py-2 rounded-md text-base font-medium"
+            className="block bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-2 rounded-md text-base font-medium"
           >
             Kontakt
           </a>
