@@ -33,13 +33,13 @@ function Skills() {
             key={group.category}
             className="bg-slate-800/40 border border-slate-700/60 rounded-xl p-6"
           >
-            <h3 className="text-lg font-semibold text-blue-400 mb-4 pb-2 border-b border-slate-700/60">
+            <h3 className="text-lg font-semibold text-emerald-400 mb-4 pb-2 border-b border-slate-700/60">
               {group.category}
             </h3>
             <ul className="space-y-2.5">
               {group.skills.map((skill) => (
                 <li key={skill} className="flex items-center gap-2 text-slate-300 text-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                   {skill}
                 </li>
               ))}
