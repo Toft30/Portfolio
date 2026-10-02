@@ -1,19 +1,19 @@
 const skillCategories = [
   {
     category: 'Databehandling & Ingestion',
-    skills: ['Python', 'Java', 'SQL', 'PySpark', 'Apache Kafka', 'Apache Airflow', 'dbt'],
+    skills: ['Delvis Python', 'SQL', 'Java', 'Spring', 'Haskell'],
   },
   {
     category: 'Databasar & Lagring',
-    skills: ['PostgreSQL', 'Snowflake', 'MongoDB', 'Redis', 'S3 Data Lake', 'DuckDB'],
+    skills: ['PostgreSQL'],
   },
   {
     category: 'Sky & DevOps',
-    skills: ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'CI/CD Pipelines', 'Git'],
+    skills: ['Git'],
   },
   {
     category: 'Utvikling & Frontend',
-    skills: ['React', 'JavaScript', 'Tailwind CSS', 'Vite', 'REST & GraphQL APIs', 'FastAPI'],
+    skills: ['React', 'JavaScript', 'Tailwind CSS'],
   },
 ]
 
