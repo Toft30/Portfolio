@@ -37,10 +37,7 @@ function Hero() {
     "Simon",
     List.of(
         "Python", "Java", "SQL",
-        "PySpark", "Apache Kafka",
-        "Apache Airflow", "dbt",
-        "PostgreSQL", "Snowflake",
-        "Docker", "AWS", "React"
+        "PostgreSQL", "React"
     ),
     "Klar for utfordringar!"
 );`}

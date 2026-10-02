@@ -40,7 +40,7 @@ function Contact() {
             <h3 className="text-xl font-semibold text-white mb-2">Direkte kontakt</h3>
 
             <a
-              href="mailto:simon.sverre.toft@example.com"
+              href="mailto:simtoft30@gmail.com"
               className="flex items-center gap-3 text-slate-300 hover:text-emerald-400 transition"
             >
               <div className="p-2.5 rounded-lg bg-slate-800 border border-slate-700 text-emerald-400">
@@ -50,12 +50,12 @@ function Contact() {
               </div>
               <div>
                 <div className="text-xs text-slate-400">E-post</div>
-                <div className="text-sm font-medium">simon.sverre.toft@example.com</div>
+                <div className="text-sm font-medium">simtoft30@gmail.com</div>
               </div>
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/Toft30"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 text-slate-300 hover:text-emerald-400 transition"
@@ -72,7 +72,7 @@ function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="www.linkedin.com/in/simon-sverre-toft-5a0183395"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 text-slate-300 hover:text-emerald-400 transition"
