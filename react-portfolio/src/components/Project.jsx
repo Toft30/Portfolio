@@ -10,6 +10,16 @@ const projectsData = [
   },
   {
     id: 2,
+    title: 'VærSide',
+    description:
+      'Ei lita sid eosm kan vise vær, temp, vindhastigheit til forskjellige byar, demoside kjem snart men git repository er åpen',
+    techStack: ['Java', 'Spring', 'React'],
+    githubUrl: 'https://github.com/Toft30/VaerApp.git',
+    demoUrl: '',
+  },
+
+{
+    id: 3,
     title: 'neste prosjekt',
     description:
       'To be continued',
