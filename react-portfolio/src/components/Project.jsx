@@ -3,7 +3,7 @@ const projectsData = [
     id: 1,
     title: 'Kjell, min smart AI',
     description:
-       'Ein smart AI assistent som kan deligere små oppgåver til andre AI agentar.',
+       'Ein smart AI assistent som kan deligere små oppgåver til andre AI agentar. Framleis under utvikling.',
           techStack: ['Java', 'Spring', 'LangChain', 'PostgreSQL'],
           githubUrl: 'https://github.com/Toft30/AI-manager.git',
           demoUrl: '',
@@ -12,20 +12,19 @@ const projectsData = [
     id: 2,
     title: 'VærSide',
     description:
-      'Ei lita sid eosm kan vise vær, temp, vindhastigheit til forskjellige byar, demoside kjem snart men git repository er åpen',
+      'Ei lita side som kan vise vær, temp, vindhastigheit til forskjellige byar. Bruker OpenWeather API for å hente data. Sidan er laga med React og Spring Boot. Eg brukte AI for å lage design for det orkar ikkje eg :)',
     techStack: ['Java', 'Spring', 'React'],
     githubUrl: 'https://github.com/Toft30/VaerApp.git',
-    demoUrl: '',
+    demoUrl: 'https://toft30.github.io/VaerApp/',
   },
 
 {
     id: 3,
-    title: 'neste prosjekt',
+    title: 'Pokedex ML side',
     description:
-      'To be continued',
-    techStack: [],
-    githubUrl: '',
-    demoUrl: '',
+      'Eit maskinlæringsprosjekt vi hadde på skule. Prosjektet er ein nettside der brukar kan legge inn stats, type og generasjon og modellen kjem til å gi dei 3 nærmaste pokemon med desse statsa. Sida kjem snart men git repository er åpen',
+    techStack: ['Python ', 'Maskinlæring'],
+    githubUrl: 'https://github.com/Toft30/PokedexML',
   },
 ]
 
