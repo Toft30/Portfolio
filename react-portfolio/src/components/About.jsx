@@ -1,6 +1,6 @@
 // Legg biletet i public/ (t.d. public/profil.jpg) og set stien her, t.d. './profil.jpg'.
 // Så lenge den er null, blir det vist ein plasshaldar med initialar.
-const bilete = 'public/Profilbilete.jpg'
+const bilete = './Profilbilde.jpg'
 
 const avsnitt = [
   'Eg er Simon, dataingeniørstudent ved Høgskulen på Vestlandet (HVL). Eg har erfaring med programmering, maskinlæring og webutvikling.',
