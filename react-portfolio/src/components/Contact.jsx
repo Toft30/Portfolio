@@ -72,7 +72,7 @@ function Contact() {
             </a>
 
             <a
-              href="www.linkedin.com/in/simon-sverre-toft-5a0183395"
+              href="https://www.linkedin.com/in/simon-sverre-toft-5a0183395"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 text-slate-300 hover:text-emerald-400 transition"
