@@ -11,7 +11,7 @@ function Hero() {
             Hei, eg bygger <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-green-400">skalerbare datastrukturar</span> og moderne løsningar.
           </h1>
           <p className="text-lg text-slate-300 max-w-2xl leading-relaxed" id="about">
-            Som dataingeniør har eg fokus på å transformere rådata til innsikt gjennom robuste pipelines, effektiv datamodellering, og rein systemarkitektur. Eg brenn for effektiv databehandling, ETL/ELT, skyteknologi og skalerbar programvare.
+            Eg er ein lidenskapelig dataingeniør og utviklar med erfaring innan både frontend og backend. Eg har ein sterk interesse for å skape effektive, skalerbare og moderne løysingar som kan gjere ein forskjell. Eg er alltid på utkikk etter nye utfordringar og moglegheiter til å lære og vekse innan teknologi.
           </p>
           <div className="pt-2 flex flex-wrap gap-4">
             <a
