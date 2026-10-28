@@ -1,5 +1,9 @@
 import { useState } from 'react'
 
+// Hent gratis nøkkel på https://web3forms.com (skriv inn e-posten din, nøkkelen kjem på mail).
+// Nøkkelen er laga for å ligge i frontend-kode, så han er trygg å committe.
+const WEB3FORMS_KEY = '526c31ff-5c24-4001-8e17-595ff8e66fe4'
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -7,7 +11,8 @@ function Contact() {
     message: '',
   })
 
-  const [submitted, setSubmitted] = useState(false)
+  // 'idle' | 'sending' | 'sent' | 'error'
+  const [status, setStatus] = useState('idle')
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -17,10 +22,31 @@ function Contact() {
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    if (formData.name && formData.email && formData.message) {
-      setSubmitted(true)
+    setStatus('sending')
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: `Ny melding frå portefølja: ${formData.name}`,
+          from_name: 'Portefølje',
+          ...formData,
+        }),
+      })
+      const result = await response.json()
+
+      if (result.success) {
+        setStatus('sent')
+        setFormData({ name: '', email: '', message: '' })
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
     }
   }
 
@@ -95,7 +121,7 @@ function Contact() {
           <div className="bg-slate-800/40 border border-slate-700/60 rounded-xl p-6">
             <h3 className="text-xl font-semibold text-white mb-4">Send ein bodskap</h3>
 
-            {submitted ? (
+            {status === 'sent' ? (
               <div className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 p-4 rounded-lg">
                 Takk for meldinga! Eg svarar så fort som råd.
               </div>
