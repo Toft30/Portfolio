@@ -22,9 +22,10 @@ const projectsData = [
     id: 3,
     title: 'Pokedex ML side',
     description:
-      'Eit maskinlæringsprosjekt vi hadde på skule. Prosjektet er ein nettside der brukar kan legge inn stats, type og generasjon og modellen kjem til å gi dei 3 nærmaste pokemon med desse statsa. Sida kjem snart men git repository er åpen',
+      'Eit maskinlæringsprosjekt vi hadde på skule. Prosjektet er ein nettside der brukar kan legge inn stats, type og generasjon og modellen kjem til å gi dei 3 nærmaste pokemon med desse statsa. Sida er oppe gjennom streamlit',
     techStack: ['Python ', 'Maskinlæring'],
     githubUrl: 'https://github.com/Toft30/PokedexML',
+    demoUrl: 'https://pokepredict.streamlit.app/'
   },
 ]
 
