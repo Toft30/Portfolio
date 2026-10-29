@@ -1,7 +1,7 @@
 const projectsData = [
   {
     id: 1,
-    title: 'Kjell, min smart AI',
+    title: 'Multi AI system',
     description:
        'Ein smart AI assistent som kan deligere små oppgåver til andre AI agentar. Framleis under utvikling.',
           techStack: ['Java', 'Spring', 'LangChain', 'PostgreSQL'],
