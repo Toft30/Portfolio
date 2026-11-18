@@ -11,9 +11,9 @@ const projectsData = [
 
   {
     id: 2,
-    title: 'Multi AI system',
+    title: 'ODIN - Operational Data & Intelligence Node',
     description:
-       'Ein smart AI assistent som kan deligere små oppgåver til andre AI agentar. Framleis under utvikling.',
+       'Ein lokal smart AI Assistent som skal kunne gjer småoppgåver for deg. Har brukt ein anna github for inspo for eg er ikkje Tony Stark. Eller har eg koda med claude og google jules for å få ein AI som kan: lære dialekta din etter tid, redigere i kalender, rydde opp og lese over uleste eposeter i innboks også lese og sende epost med din godkjenning. Framtidige funksjoner er ikkje bestemt enda, og eg kjem til å forbetre funksjonane den allereie har',
           techStack: ['Java', 'Spring', 'LangChain', 'PostgreSQL'],
           githubUrl: 'https://github.com/Toft30/AI-manager.git',
           demoUrl: '',
