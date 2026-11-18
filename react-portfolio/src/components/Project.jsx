@@ -1,6 +1,16 @@
 const projectsData = [
-  {
+{
     id: 1,
+    title: 'EzReg',
+    description:
+       'Eit automatisk registreringsystem for mindre byggområder som krever manuelt innsjekk på telefon. Planen er å bruke Esp 32 og Bluetooth Beacons for automatisk registrering. Det skal da ver kopla opp mot ein nettside som viser om arbeidar er på byggplass, når dei har kome og dei har gått. Side og git kjem seinare',
+          techStack: [],
+          githubUrl: '',
+          demoUrl: '',
+  },
+
+  {
+    id: 2,
     title: 'Multi AI system',
     description:
        'Ein smart AI assistent som kan deligere små oppgåver til andre AI agentar. Framleis under utvikling.',
@@ -9,7 +19,7 @@ const projectsData = [
           demoUrl: '',
   },
   {
-    id: 2,
+    id: 3,
     title: 'VærSide',
     description:
       'Ei lita side som kan vise vær, temp, vindhastigheit til forskjellige byar. Bruker OpenWeather API for å hente data. Sidan er laga med React og Spring Boot. Eg brukte AI for å lage design for det orkar ikkje eg :)',
@@ -19,7 +29,7 @@ const projectsData = [
   },
 
 {
-    id: 3,
+    id: 4,
     title: 'Pokedex ML side',
     description:
       'Eit maskinlæringsprosjekt vi hadde på skule. Prosjektet er ein nettside der brukar kan legge inn stats, type og generasjon og modellen kjem til å gi dei 3 nærmaste pokemon med desse statsa. Sida er oppe gjennom streamlit',
@@ -27,6 +37,15 @@ const projectsData = [
     githubUrl: 'https://github.com/Toft30/PokedexML',
     demoUrl: 'https://pokepredict.streamlit.app/'
   },
+{
+    id: 5,
+    title: 'NynorskWordle',
+    description:
+      'Vibekoda eit dagleg gjett-ord spel der poenget er å gjette eit 5 bokstavs ord ifra nynorskordboka, akkurat som Wordle',
+    techStack: ['JavaScript'],
+    githubUrl: 'https://github.com/Toft30/NynorskWordle',
+    demoUrl: 'https://toft30.github.io/NynorskWordle/'
+},
 ]
 
 function Projects() {
