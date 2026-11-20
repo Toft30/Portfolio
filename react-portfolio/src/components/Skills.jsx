@@ -1,3 +1,5 @@
+import SectionHeader from './SectionHeader'
+
 const skillCategories = [
   {
     category: 'Databehandling & Ingestion',
@@ -19,27 +21,26 @@ const skillCategories = [
 
 function Skills() {
   return (
-    <section id="skills" className="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-      <div className="mb-12">
-        <h2 className="text-3xl font-bold text-white tracking-tight">Ferdigheiter & Teknologi</h2>
-        <p className="mt-2 text-slate-400">
-          Oversikt over verktøy, språk og rammeverk eg nyttar i min kvardag som dataingeniør.
-        </p>
-      </div>
+    <section id="skills" className="py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+      <SectionHeader
+        nummer="03 — Ferdigheiter"
+        tittel="Verktøykassa"
+        undertekst="Språk, rammeverk og verktøy eg nyttar i kvardagen som dataingeniør."
+      />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {skillCategories.map((group) => (
-          <div
-            key={group.category}
-            className="bg-slate-800/40 border border-slate-700/60 rounded-xl p-6"
-          >
-            <h3 className="text-lg font-semibold text-emerald-400 mb-4 pb-2 border-b border-slate-700/60">
-              {group.category}
+      <div className="divide-y divide-slate-800 border-y border-slate-800">
+        {skillCategories.map((group, i) => (
+          <div key={group.category} className="grid grid-cols-1 md:grid-cols-12 gap-4 py-7 items-baseline">
+            <h3 className="md:col-span-4 flex items-baseline gap-3 text-slate-400">
+              <span className="font-mono text-xs text-emerald-500">{String(i + 1).padStart(2, '0')}</span>
+              <span className="font-medium">{group.category}</span>
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="md:col-span-8 flex flex-wrap gap-x-6 gap-y-2">
               {group.skills.map((skill) => (
-                <li key={skill} className="flex items-center gap-2 text-slate-300 text-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <li
+                  key={skill}
+                  className="font-display text-2xl sm:text-3xl font-medium tracking-tight text-slate-100 hover:text-emerald-400 transition-colors cursor-default"
+                >
                   {skill}
                 </li>
               ))}

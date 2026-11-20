@@ -1,7 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Inter Tight', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -9,6 +16,36 @@ body {
   padding: 0;
   background-color: #020617;
   color: #f8fafc;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: var(--font-sans);
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fint rutenett i bakgrunnen av hero, tona ut mot botn */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(30 41 59 / 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(30 41 59 / 0.5) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 70% at 30% 40%, black 30%, transparent 75%);
+}
+
+.caret::after {
+  content: '';
+  display: inline-block;
+  width: 0.55ch;
+  height: 0.9em;
+  margin-left: 0.08em;
+  vertical-align: -0.05em;
+  background: #34d399;
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caret::after { animation: none; }
+  html { scroll-behavior: auto; }
 }
